@@ -41,6 +41,9 @@ namespace ConsoleApplication1
             PointList.Add(p3);
             PointList.Add(p4);
 
+            HorizontLine line = new HorizontLine(3, 10, 8, '#');
+            line.Drow();
+
             Console.ReadLine();
         }
 
