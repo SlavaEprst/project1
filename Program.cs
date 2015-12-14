@@ -16,8 +16,18 @@ namespace ConsoleApplication1
             Point p2 = new Point();
             p2.Draw();
 
+            List<char> Sim = new List<char>();
+            Sim.Add('@');
+            Sim.Add('#');
+            Sim.Add('$');
+            Sim.Add('%');
+            Sim.Add('&');
 
-          
+            foreach (char F in Sim)
+            {
+                Console.WriteLine(F);
+            }
+
 
             Console.ReadLine();
         }
