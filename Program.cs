@@ -13,8 +13,14 @@ namespace ConsoleApplication1
             Point p1 = new Point(3, 8,'&');
             p1.Draw();
 
-            Point p2 = new Point();
+            Point p2 = new Point(1, 1,'#');
             p2.Draw();
+
+            Point p3 = new Point(2, 7, '$');
+            p3.Draw();
+
+            Point p4 = new Point(5, 5, '^');
+            p4.Draw();
 
             List<char> Sim = new List<char>();
             Sim.Add('@');
@@ -28,6 +34,12 @@ namespace ConsoleApplication1
                 Console.WriteLine(F);
             }
 
+
+            List<Point> PointList = new List<Point>();
+            PointList.Add(p1);
+            PointList.Add(p2);
+            PointList.Add(p3);
+            PointList.Add(p4);
 
             Console.ReadLine();
         }
