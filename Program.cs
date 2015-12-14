@@ -22,6 +22,20 @@ namespace ConsoleApplication1
             p2.sim = '#';
             p2.Draw();
 
+
+            List<char> Sim = new List<char>();
+            Sim.Add('@');
+            Sim.Add('#');
+            Sim.Add('$');
+            Sim.Add('%');
+            Sim.Add('&');
+
+            foreach (char F in Sim)
+            {
+                Console.WriteLine(F);
+            }
+
+
             Console.ReadLine();
         }
 
