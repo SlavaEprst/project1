@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
 
-            HorizontLine line = new HorizontLine(1, 20, 1,20, '+');
+            HorizontLine line = new HorizontLine(1, 50, 1,20, '+');
             line.Drow();
 
             Console.ReadLine();

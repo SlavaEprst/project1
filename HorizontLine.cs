@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class HorizontLine
+    class HorizontLine:figure
     {
-        List<Point> pList;
+  
 
         public HorizontLine(int xLe, int xRi, int yLe, int yRi, char sim)
         {
