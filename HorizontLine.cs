@@ -10,14 +10,25 @@ namespace ConsoleApplication1
     {
         List<Point> pList;
 
-        public HorizontLine(int xLe, int xRi, int y, char sim)
+        public HorizontLine(int xLe, int xRi, int yLe, int yRi, char sim)
         {
             pList = new List<Point>();
-            for (int x = xLe; x <= xRi; x++)
+          
+            for (int y = yLe; y <= yRi; y++)
             {
-                Point p = new Point(x, y, sim);
-                pList.Add(p);
+                Point p2 = new Point(xLe, y,  sim);
+                pList.Add(p2);
+                Point p3 = new Point(xRi, y, sim);
+                pList.Add(p3);
             }
+  for (int x = xLe; x <= xRi; x++)
+            {
+                Point p = new Point(x, yLe, sim);
+                pList.Add(p);
+                Point p1 = new Point(x, yRi, sim);
+                pList.Add(p1);
+            }
+
         }
             public void Drow()
         {
