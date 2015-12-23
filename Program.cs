@@ -14,6 +14,10 @@ namespace ConsoleApplication1
             HorizontLine line = new HorizontLine(1, 50, 1,20, '+');
             line.Drow();
 
+            Point p = new Point(6, 6, '*');
+
+            snake snake = new snake(p, 7, direction.RIGHT);
+
             Console.ReadLine();
         }
 
