@@ -15,8 +15,11 @@ namespace ConsoleApplication1
             line.Drow();
 
             Point p = new Point(6, 6, '*');
+         
 
-            snake snake = new snake(p, 7, direction.RIGHT);
+            snake snake = new snake(p, 7, direction.DOWN);
+            snake.Drow();
+
 
             Console.ReadLine();
         }

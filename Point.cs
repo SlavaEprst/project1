@@ -46,11 +46,11 @@ namespace ConsoleApplication1
 
             if (direction == direction.UP)
             {
-                x = x + offset;
+                y = y - offset;
             }
             if (direction == direction.DOWN)
             {
-                x = x - offset;
+                y = y + offset;
             }
 
         }
