@@ -25,7 +25,35 @@ namespace ConsoleApplication1
                 
         }
 
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sim = p.sim;
 
+        }
+
+        public void Move(int offset, direction direction)
+        {
+            if (direction == direction.RIGHT)
+            {
+                x = x + offset;
+            }
+            if (direction == direction.LEFT)
+            {
+                x = x - offset;
+            }
+
+            if (direction == direction.UP)
+            {
+                y = y - offset;
+            }
+            if (direction == direction.DOWN)
+            {
+                y = y + offset;
+            }
+
+        }
 
         public void Draw()
         {
